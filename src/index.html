@@ -47,7 +47,24 @@
         </div>
       </header>
 
-      <main></main>
+      <main class="page__main">
+        <picture class="banner">
+          <source
+            srcset="img/banner_1020.jpg 1x, img/banner_1020@2.jpg 2x"
+            media="(min-width: 1020px)"
+          />
+          <source
+            srcset="img/banner_768.jpg 1x, img/banner_768@2.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="banner__image"
+            src="img/banner_450.jpg"
+            srcset="img/banner_450@2.jpg 2x"
+            alt="Photo of Happyland park"
+          />
+        </picture>
+      </main>
 
       <footer class="footer page__footer" role="contentinfo">
         <ul class="social-links footer__social-links">
